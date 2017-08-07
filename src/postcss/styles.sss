@@ -14,10 +14,12 @@ header
   display: flex
   justify-content: space-between
   padding: 15px 23px
-  position: absolute
+  position: fixed
   top: 0
   left: 0
   right: 0
+  z-index: 100
+  background-color: rgba(255,255,255,0)
 
 .boton-header
   text-decoration: none
@@ -63,7 +65,7 @@ header
   height: 100vh
 
 .contenedor-fashion
-  background-image: url('../images/thomasph_fashion11.jpg')
+  background-image: url('./images/thomasph_coverfashion.jpg')
   background-repeat: no-repeat
   background-position: center center
   background-size: cover
@@ -73,7 +75,7 @@ header
   align-items: center
 
 .contenedor-teens
-  background-image: url('../images/thomasph_teens3.jpg')
+  background-image: url('./images/thomasph_coverteens.jpg')
   background-repeat: no-repeat
   background-position: center center
   background-size: cover

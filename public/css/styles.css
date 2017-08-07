@@ -23,8 +23,24 @@
 }
 
 @media screen and (max-width: 800px) {
+  header{
+      background-color: rgba(255,255,255,0.9);
+  }
+
   .contenedor-home{
     flex-direction: column !important;
+  }
+
+  .boton-header{
+    font-size: 16px !important;
+  }
+
+  .boton-header img{
+    width: 160px
+  }
+
+  .contenedor-navegador{
+    display: none !important;
   }
 
   .contenedor-fashion, .contenedor-teens{
@@ -32,12 +48,12 @@
   }
 
   #columnas{
-    column-count: 2;
+    column-count: 2 !important;
   }
 }
 
 @media screen and (max-width: 650px) {
   #columnas{
-    column-count: 1;
+    column-count: 1 !important;
   }
 }

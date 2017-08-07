@@ -5,7 +5,7 @@ const Title = ({titulo, location}) => {
   return (
     <div className='contenedor-header-titulo'>
       <Link to='/' className='boton-header'>
-        {location === '/' ? <div className='header-titulo'>{titulo}</div> : <div className='header-titulo-negro'>{titulo}</div>}
+        {location === '/' ? <img src='./images/anita-thomas-white.png' /> : <img src='./images/anita-thomas-black.png' />}
       </Link>
     </div>
   )
