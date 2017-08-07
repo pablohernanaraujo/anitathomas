@@ -1,1 +1,0 @@
-export const IMAGENES_SUCCESS = 'IMAGENES_SUCCESS'
