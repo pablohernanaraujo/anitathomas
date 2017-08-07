@@ -1,3 +1,9 @@
+@media screen and (max-width: 1920px) {
+  #columnas{
+    column-count: 5 !important;
+  }
+}
+
 @media screen and (max-width: 1600px) {
   #columnas{
     column-count: 5 !important;
