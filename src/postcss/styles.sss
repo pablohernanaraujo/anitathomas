@@ -1,0 +1,93 @@
+@import './normalize.sss'
+
+@import './queries.sss'
+
+@import './grid.sss'
+
+@import './fashion.sss'
+
+body
+  color: #fff
+  font-family: 'Lato', sans-serif
+
+header
+  display: flex
+  justify-content: space-between
+  padding: 15px 23px
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+
+.boton-header
+  text-decoration: none
+
+.header-titulo
+  letter-spacing: 3px
+  color: #fff
+
+.header-titulo-negro
+  letter-spacing: 3px
+  color: #000
+
+.contenedor-derecha
+  display: flex
+  flex-direction: row
+
+.contenedor-social
+  margin-left: 20px
+
+.icono-negro
+  text-decoration: none
+  color: #000
+  margin-left: 20px
+
+.icono-blanco
+  text-decoration: none
+  color: #fff
+  margin-left: 20px
+
+.boton-navegador
+  color: #000
+  text-decoration: none
+  margin-left: 10px
+  padding: 0 5px
+
+.boton-navegador-active
+  background-color: #e8fd00
+
+.contenedor-home
+  display: flex
+  flex-direction: row
+  width: 100vw
+  height: 100vh
+
+.contenedor-fashion
+  background-image: url('../images/thomasph_fashion11.jpg')
+  background-repeat: no-repeat
+  background-position: center center
+  background-size: cover
+  flex: 1
+  display: flex
+  justify-content: center
+  align-items: center
+
+.contenedor-teens
+  background-image: url('../images/thomasph_teens3.jpg')
+  background-repeat: no-repeat
+  background-position: center center
+  background-size: cover
+  flex: 1
+  display: flex
+  justify-content: center
+  align-items: center
+
+.boton-fashion, .boton-teens
+  text-decoration: none
+  color: #fff
+  font-size: 20px
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6)
+
+@media (--only-800)
+  .contenedor-home
+    flex-direction: column
