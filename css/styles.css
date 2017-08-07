@@ -5,12 +5,14 @@
 @media screen and (max-width: 1920px) {
   #columnas{
     column-count: 5 !important;
+    margin-top: 50px !important;
   }
 }
 
 @media screen and (max-width: 1600px) {
   #columnas{
     column-count: 3 !important;
+    margin-top: 50px !important;
   }
 }
 
@@ -46,11 +48,13 @@
 
   #columnas{
     column-count: 2 !important;
+    margin-top: 109px !important;
   }
 }
 
 @media screen and (max-width: 650px) {
   #columnas{
     column-count: 1 !important;
+    margin-top: 109px !important;
   }
 }
