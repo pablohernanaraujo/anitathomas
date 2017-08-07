@@ -19,10 +19,12 @@ header
   left: 0
   right: 0
   z-index: 100
-  background-color: rgba(255,255,255,0)
 
 .boton-header
   text-decoration: none
+
+  & img
+    width: 150px
 
 .header-titulo
   letter-spacing: 3px
@@ -88,8 +90,12 @@ header
   text-decoration: none
   color: #fff
   font-size: 20px
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.6)
+  z-index: 30
 
-@media (--only-800)
-  .contenedor-home
-    flex-direction: column
+.mascara-home
+  position: absolute
+  background-color: rgba(0,0,0,0.5)
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0

@@ -21,7 +21,7 @@ export default class Header extends React.Component {
     )
     return (
       <div>
-        <header>
+        {this.props.pathname === '/' ? <header>
           <Title
             titulo={'ANITA THOMAS'}
             location={this.props.pathname}
@@ -37,7 +37,23 @@ export default class Header extends React.Component {
               </a>
             </div>
           </div>
-        </header>
+        </header> : <header style={{'backgroundColor': 'rgba(255,255,255,0.9)'}}>
+          <Title
+            titulo={'ANITA THOMAS'}
+            location={this.props.pathname}
+          />
+          <div className='contenedor-derecha'>
+            {this.props.pathname === '/' ? null : botones}
+            <div className='contenedor-social'>
+              <a href='https://www.facebook.com/AnitaThomasPH/' className='boton-social' target='_blank'>
+                {this.props.pathname === '/' ? <i className='fa fa-facebook icono-blanco' /> : <i className='fa fa-facebook icono-negro' />}
+              </a>
+              <a href='https://www.instagram.com/anitathomasph/?hl=es' className='boton-social' target='_blank'>
+                {this.props.pathname === '/' ? <i className='fa fa-instagram icono-blanco' /> : <i className='fa fa-instagram icono-negro' />}
+              </a>
+            </div>
+          </div>
+        </header>}
       </div>
     )
   }
